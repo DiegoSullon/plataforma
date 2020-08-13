@@ -3,7 +3,9 @@ import React from 'react';
 
 
 const App = ()=>(
-  <div></div>
+  <h1>
+    Plataforma de educación online
+  </h1>
 )
 
 export default App;
