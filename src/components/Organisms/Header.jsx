@@ -1,5 +1,6 @@
 import React, { createRef } from 'react'
 import { NavLink } from 'react-router-dom'
+import logo from '../logo.svg';
 
 const menu = createRef()
 const toggleMenu = () => {
@@ -18,7 +19,7 @@ const Header = () => {
       <div className="ed-grid s-grid-5 lg-grid-4">
         <div className="s-cols-4 lg-cols-1 s-cross-center">
           <NavLink to="/">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Intel-logo.svg/800px-Intel-logo.svg.png" alt="EDlogo Premium" className="main-logo" />
+            <img src={logo} alt="App-logo EDlogo Premium" className="main-logo" />
           </NavLink>
         </div>
         <div className="s-cols-1 lg-cols-3 s-cross-center s-main-end">
