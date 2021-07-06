@@ -24,7 +24,7 @@ const Teachers = ({ match, teachers }) => {
       />
 
       {
-        teachers &&
+        teachers && Array.isArray(teachers) &&
         <main className="ed-grid m-grid-3 lg-grid-4 row-gap">
           {
             teachers.map(t => (

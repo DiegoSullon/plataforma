@@ -23,7 +23,7 @@ const Courses = ({ courses }) => {
         subtitle="Comienza desde cero a dominar una tecnología"
       />
       {
-        courses &&
+        courses && Array.isArray(courses) &&
         <main className="ed-grid m-grid-3">
           {
             courses.map(c => (
