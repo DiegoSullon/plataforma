@@ -23,7 +23,7 @@ function Specialities({specialities}) {
         subtitle="Domina una tecnologia con las rutas de aprendizaje que te ofrecemos"
       />
       {
-        specialities &&
+        specialities && Array.isArray(specialities) &&
         <main className="ed-grid m-grid-3">
           {
             specialities.map(s => (
