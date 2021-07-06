@@ -28,7 +28,7 @@ function Home({ posts }) {
           <h2>Ultimas publicaciones</h2>
           <div>
             {
-              posts ?
+              posts && posts ?
                 <div>
                   {
                     posts.map(p => <Publication title={p.title} author={p.author} fecha={new Date(p.postDate)} content={p.content} />)
