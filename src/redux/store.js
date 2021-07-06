@@ -1,5 +1,4 @@
 import { createStore, combineReducers, applyMiddleware } from "redux"
-import { composeWithDevTools } from "redux-devtools-extension"
 import thunk from "redux-thunk"
 import {
   postReducer,
@@ -16,5 +15,5 @@ export default createStore(
     classReducer,
     teacherReducer
   }),
-  composeWithDevTools(applyMiddleware(thunk))
+  applyMiddleware(thunk)
 )
