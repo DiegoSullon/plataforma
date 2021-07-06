@@ -27,15 +27,7 @@ function Home({ posts }) {
         <div className="l-section m-cols-2">
           <h2>Ultimas publicaciones</h2>
           <div>
-            {
-              posts && posts ?
-                <div>
-                  {
-                    posts.map(p => <Publication title={p.title} author={p.author} fecha={new Date(p.postDate)} content={p.content} />)
-                  }
-                </div> :
-                <p>No hay nuevas actualizaciones {f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()}</p>
-            }
+            <p>No hay nuevas actualizaciones {f.getDate() + "/" + (f.getMonth() +1) + "/" + f.getFullYear()}</p>
           </div>
         </div>
         <div> 
