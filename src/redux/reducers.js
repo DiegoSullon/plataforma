@@ -9,7 +9,9 @@ import {
   GET_FRAGMENT
 } from "./actions"
 
-const initialState ={}
+const initialState ={
+  specialities: []
+}
 export const postReducer = (state = initialState, action) => {
   if (action.type === GET_ALL_POSTS) {
     return {
